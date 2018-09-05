@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>position</title>
+		<style type="text/css">
+			*{margin: 0;padding: 0;}
+			em{font-style: normal;}
+			.a{width:300px;height:300px;border: solid 6px #CCCCCC;position: relative;float: left;margin: 10px;}
+			.b{width:300px;height:300px;border: solid 6px #CCCCCC;position: relative;float: left;margin: 10px;}
+			.c{width:300px;height:300px;border: solid 6px #CCCCCC;position: relative;float: left;margin: 10px;}
+			 img{width:300px;height:300px;}
+			 em{display: block;background: url(../img/tu.gif);width: 25px;height: 25px;position: absolute;left: 30px;bottom: 30px;z-index: 9;}
+			 span{display: block;width: 310px;height: 310px;border: solid 1px #000;background:#fff;position: absolute;left:-6px;top:-6px;opacity: 0.5;display: none;}
+			 p{display: block;background:url(../img/logo.gif) no-repeat;position: absolute;left:10px;top:10px;text-indent: 30px;display: none;}
+			.a:hover  p{display: block;}
+			.a:hover  span{display: block;}
+			.a:hover  em{background: url(../img/tu2.gif) no-repeat;}
+			.b:hover  p{display: block;}
+			.b:hover  span{display: block;}
+			.b:hover  em{background: url(../img/tu2.gif) no-repeat;}
+			.c:hover  p{display: block;}
+			.c:hover  span{display: block;}
+			.c:hover  em{background: url(../img/tu2.gif) no-repeat;}
+			
+		</style>
+	</head>
+	<body>
+		<div class="a">
+			<img src="../img/img01.jpg"/>
+			<em></em>
+			<span></span>
+			<p>我是一句话</p>
+		</div>
+		<div class="c">
+			<img src="../img/img02.jpg"/>
+			<em></em>
+			<span></span>
+			<p>我是一句话</p>
+		</div>
+		<div class="b">
+			<img src="../img/img03.jpg"/>
+			<em></em>
+			<span></span>
+			<p>我是一句话</p>
+		</div>
+	</body>
+</html>

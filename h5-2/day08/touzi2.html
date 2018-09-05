@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			body{height: 600px;transform-style: preserve-3d;perspective: 1200px;display: flex;justify-content: center;align-items: center;}
+			.box{width: 100px;height: 100px;position: relative;transform-style: preserve-3d;animation: abc 5s linear infinite;transform: rotateZ(45deg) rotateY(45deg);transform-origin: center center 50px;}
+			
+			.box>div{width: 70px;height: 70px;background: #000;border-radius: 10px;padding: 15px;box-shadow: 0px 4px 10px gray;position: absolute;top: 0;left: 0;opacity: 0.5;}
+			.box span{width: 20px;height: 20px;background: #fff;border-radius: 50%;}
+			
+			.box1{display: flex;justify-content: center;align-items: center;}
+			
+			.box2{display: flex;flex-direction: column;align-items: center;justify-content: space-around;transform: translateX(100px) rotateY(-89deg);transform-origin: left;}
+			
+			.box3{display: flex;justify-content: space-around;transform: translateX(-100px) rotateY(90deg);transform-origin: right;}
+			.box3 span:nth-child(2){align-self: center;}
+			.box3 span:nth-child(3){align-self: flex-end;}
+			
+			.box4{display: flex;flex-direction: column;justify-content: space-around;transform: translateY(100px) rotateX(90deg);transform-origin: top;}
+			.box4 div:nth-child(1){display: flex;justify-content: space-around;}
+			.box4 div:nth-child(2){display: flex;justify-content: space-around;}
+
+			.box5{display: flex;flex-direction: column;justify-content: space-around;transform: translateY(-100px) rotateX(-90deg);transform-origin: bottom;}
+			.box5 div:nth-child(1){display: flex;justify-content: space-between;}
+			.box5 div:nth-child(2){display: flex;justify-content: center;}
+			.box5 div:nth-child(3){display: flex;justify-content: space-between;}
+			
+			.box6{display: flex;flex-direction: column;justify-content: space-around;transform: translateZ(100px);}
+			.box6 div:nth-child(1){display: flex;justify-content: space-around;}
+			.box6 div:nth-child(2){display: flex;justify-content: space-around;}
+			.box6 div:nth-child(3){display: flex;justify-content: space-around;}
+			
+			@keyframes abc{
+				0%{transform:rotateZ(45deg) rotateY(45deg) rotateX(0deg);}
+				100%{transform:rotateZ(405deg) rotateY(405deg) rotateX(360deg);}
+			}
+		</style>
+	</head>
+	<body>
+		<div class="box">
+			<div class="box1">
+				<span></span>
+			</div>
+			<div class="box2">
+				<span></span>
+				<span></span>
+			</div>
+			<div class="box3">
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
+			<div class="box4">
+				<div>
+					<span></span>
+					<span></span>
+				</div>
+				<div>
+					<span></span>
+					<span></span>
+				</div>
+			</div>
+			<div class="box5">
+				<div>
+					<span></span>
+					<span></span>
+				</div>
+				<div><span></span></div>
+				<div>
+					<span></span>
+					<span></span>
+				</div>
+			</div>
+			<div class="box6">
+				<div>
+					<span></span>
+					<span></span>
+				</div>
+				<div>
+					<span></span>
+					<span></span>
+				</div>
+				<div>
+					<span></span>
+					<span></span>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

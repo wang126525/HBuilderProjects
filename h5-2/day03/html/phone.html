@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<style type="text/css">
+		*{margin: 0;padding: 0;}
+		li{list-style: none;}
+		a{text-decoration: none;}
+		img{display: block;}
+		
+		#top{width: 1000px;height: 62px;background: #232323;margin: 0 auto;}
+		#top .logo{float: left;margin: 12px 0 0 10px;}
+		#top .nav{float: right;}
+		/*#top .nav li{text-align: center;line-height: 62px;float: left;}
+		#top .nav li:hover{background: red;}
+		#top .nav li:hover a{border-color: red;}
+		#top .nav li a{color: #0ff;border-left: solid 1px #000;border-right: solid 1px #444;padding: 0 12px;}*/
+		#top .nav li{line-height: 62px;float: left;background: url(img/nav_bj.jpg) no-repeat right center;}
+		#top .nav .last{background: none;}
+		#top .nav li:hover{background: red;}
+		#top .nav li a{color: #0ff;padding: 0 12px;}
+		
+		#banner{width: 1000px;margin: 0 auto;}
+		#banner img{width: 100%;}
+		
+		#listbox{width: 1000px;height: 345px;padding-top: 35px;background: #f5f5f5;margin: 0 auto;}
+		#listbox .list1{width: 250px;text-align: center;padding: 20px 0 37px;float: left;background: url(img/list_bj.jpg) repeat-y right top;}
+		.list1 img{margin: 0 auto;}
+		.list1 h3{font-size: 22px;line-height: 52px;}
+		.list1 .p1{font-size: 14px;line-height: 20px;margin-bottom: 12px;}
+		.list1 .p2{font-size: 14px;line-height: 18px;}
+		#listbox .last{background: none;}
+		
+		#news{width: 1000px;height: 266px;margin: 0 auto;padding-top: 44px;}
+		#news .news_l{width: 302px;margin-right: 14px;float: left;}
+		.news_l div{border: solid 1px #deddd9;padding: 1px;}
+		#news .news_c{width: 320px;float: left;margin-top: 4px;border-right: solid 1px #dddddd;padding-right: 18px;}
+		.news_c h3{font-size: 22px;margin-bottom: 5px;}
+		.news_c .p1{font-size: 16px;line-height: 40px;}
+		.news_c .p2{font-size: 12px;line-height: 18px;color: #9b9b9b;text-indent: 24px;padding-bottom: 10px;border-bottom: dashed 1px #cacaca;}
+		.news_c ul{margin-top: 12px;}
+		.news_c ul li{line-height: 24px;font-size: 14px;background: url(img/list-style.jpg) no-repeat left center;text-indent: 14px;}
+		.news_c ul li a{color: #000;}
+		#news .news_r{width: 332px;float: left;padding-left: 13px;}
+		.news_r h3{font-size: 22px;margin-bottom: 5px;}
+		.news_r .p1{margin: 14px 0 12px;}
+		.news_r .p1 a{float: left;margin-right: 25px;}
+		.news_r .p2{line-height: 52px;font-size: 22px;font-weight: bold;}
+		.news_r ul li{line-height: 24px;font-size: 14px;}
+		
+		#footer{width: 1000px;height: 222px;background: #222;margin: 0 auto;padding-top: 20px;}
+		#footer .foot_l{width: 492px;float: left;margin-top: 12px;}
+		.foot_l dl{width: 98px;text-align: center;float: left;}
+		.foot_l dt{line-height: 48px;font-size: 12px;color: #fff;}
+		.foot_l dd{line-height: 24px;font-size: 12px;}
+		.foot_l dd a{color: #999;}
+		
+		
+		#footer .foot_c{width: 314px;float: left;margin-top: 10px;background: url(img/news_b.jpg) no-repeat;}
+		.foot_c img{margin: 0 auto;}
+		#footer .foot_r{width: 172px;float: left;padding-left: 22px;background: url(img/news_b.jpg) no-repeat;}
+		.foot_r img{margin: 0 auto;}
+		.foot_r p{text-align: center;color: #474747;font-size: 12px;line-height: 18px;}
+		
+		#bottom{width: 1000px;height: 46px;background: #101010;margin: 0 auto;}
+		#bottom p{color: #9c9c9c;font-size: 12px;line-height: 46px;text-align: center;}
+		#bottom p a{color: #9c9c9c;}
+	</style>
+</head>
+<body>
+	<div id="top">
+		<a class="logo" href=""><img src="img/p_logo.jpg"/></a>
+		<div class="nav">
+			<ul>
+				<li><a href="">首页</a></li>
+				<li><a href="">走进千锋</a></li>
+				<li><a href="">人才服务</a></li>
+				<li><a href="">千锋教育</a></li>
+				<li><a href="">好程序员</a></li>
+				<li><a href="">扣丁学堂</a></li>
+				<li><a href="">APP外包</a></li>
+				<li><a href="">培训服务</a></li>
+				<li class="last"><a href="">创业孵化</a></li>
+			</ul>
+		</div>
+	</div>
+	<div id="banner">
+		<img src="img/banner.jpg"/>
+	</div>
+	<div id="listbox">
+		<div class="list1">
+			<img src="img/list-icon.jpg"/>
+			<h3>移动产业</h3>
+			<p class="p1">国内最大互联网移动开发人才提供平台</p>
+			<p class="p2">行高的测量方式</p>
+			<p class="p2">内容块区域的居中margin: 0 auto</p>
+			<p class="p2">如何自定义列表符号讲列表符号切成图片，当背景图加给li，再让li里的文字向后挪一点</p>
+		</div>
+		<div class="list1">
+			<img src="img/list-icon.jpg"/>
+			<h3>移动产业</h3>
+			<p class="p1">国内最大互联网移动开发人才提供平台</p>
+			<p class="p2">一个元素给多个class，直接在原来class内空格再起个名</p>
+			<p class="p2">内容块区域的居中</p>
+			<p class="p2">如何自定义列表符号</p>
+		</div>
+		<div class="list1">
+			<img src="img/list-icon.jpg"/>
+			<h3>移动产业</h3>
+			<p class="p1">国内最大互联网移动开发人才提供平台</p>
+			<p class="p2">行高的测量方式</p>
+			<p class="p2">内容块区域的居中</p>
+			<p class="p2">如何自定义列表符号</p>
+		</div>
+		<div class="list1 last">
+			<img src="img/list-icon.jpg"/>
+			<h3>移动产业</h3>
+			<p class="p1">国内最大互联网移动开发人才提供平台</p>
+			<p class="p2">行高的测量方式</p>
+			<p class="p2">内容块区域的居中</p>
+			<p class="p2">如何自定义列表符号</p>
+		</div>
+	</div>
+	<div id="news">
+		<div class="news_l">
+			<div><img src="img/news.jpg"/></div>
+		</div>
+		<div class="news_c">
+			<h3>动态新闻</h3>
+			<p class="p1">你在千锋学习，百度有钱出钱</p>
+			<p class="p2">为了能够让你们有一个好工作，从去年开始就得好好学习，从去年开始就得好好学习，从去年开始就得好好学习</p>
+			<ul>
+				<li><a href="">文章题目可以点击，点击进去是详情页</a></li>
+				<li><a href="">文章题目可以点击，点击进去是详情页</a></li>
+				<li><a href="">文章题目可以点击，点击进去是详情页</a></li>
+				<li><a href="">文章题目可以点击，点击进去是详情页</a></li>
+			</ul>
+		</div>
+		<div class="news_r">
+			<h3>免费咨询</h3>
+			<p class="p1">
+				<a href=""><img src="img/news_icon.jpg"/></a>
+				<a href=""><img src="img/news_icon.jpg"/></a>
+			</p>
+			<p class="p2">400-123456</p>
+			<ul>
+				<li>培训咨询：12345678</li>
+				<li>培训咨询：12345678</li>
+				<li>培训咨询：12345678</li>
+				<li>培训咨询：12345678</li>
+			</ul>
+		</div>
+	</div>
+	<div id="footer">
+		<div class="foot_l">
+			<dl>
+				<dt>走进千锋</dt>
+				<dd><a href="">千锋简介</a></dd>
+				<dd><a href="">加入我们</a></dd>
+				<dd><a href="">联系我们</a></dd>
+				<dd><a href="">总经理寄语</a></dd>
+			</dl>
+			<dl>
+				<dt>走进千锋</dt>
+				<dd><a href="">千锋简介</a></dd>
+				<dd><a href="">加入我们</a></dd>
+				<dd><a href="">联系我们</a></dd>
+				<dd><a href="">总经理寄语</a></dd>
+			</dl>
+			<dl>
+				<dt>走进千锋</dt>
+				<dd><a href="">千锋简介</a></dd>
+				<dd><a href="">加入我们</a></dd>
+				<dd><a href="">联系我们</a></dd>
+				<dd><a href="">总经理寄语</a></dd>
+			</dl>
+			<dl>
+				<dt>走进千锋</dt>
+				<dd><a href="">千锋简介</a></dd>
+				<dd><a href="">加入我们</a></dd>
+				<dd><a href="">联系我们</a></dd>
+				<dd><a href="">总经理寄语</a></dd>
+			</dl>
+			<dl>
+				<dt>走进千锋</dt>
+				<dd><a href="">千锋简介</a></dd>
+				<dd><a href="">加入我们</a></dd>
+				<dd><a href="">联系我们</a></dd>
+				<dd><a href="">总经理寄语</a></dd>
+			</dl>
+		</div>
+		<div class="foot_c">
+			<img src="img/map.jpg"/>
+		</div>
+		<div class="foot_r">
+			<img src="img/erwm.jpg"/>
+			<p>千锋教育微信公众号</p>
+			<p>欢迎扫一扫</p>
+		</div>
+	</div>
+	<div id="bottom">
+		<p>有效期有效期有效期 公司名 &copy;备案号12312312313，一大串...<a href="">站长统计</a> <a href="">百度统计</a></p>
+	</div>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			h2{color: red;}
+			h3{color: red;}
+			h1{color: red;}
+			p{color: red;}
+			/*群组选择器*/
+			h2,h3,h1,p{font-size: 20px;}
+			/*群组选择器的完整写法*/
+			h2,.box1,#box2,.box3 i,.box4{border: solid 1px black;}
+			/*伪类选择器*/
+			/*.box3 i:hover{color: black;}*/
+			.box3:hover i{color: yellow;}
+		</style>
+	</head>
+	<body>
+		<div>
+			<h2>这是标题</h2>
+			<h3 class="box1">这是段落这是段落这是段落</h3>
+			<h1 id="box2">这是段落这是段落这是段落这是段落这是段落这是段落</h1>
+			<p class="box3">这是段落这是段落这是段落<i>这是段落这是段落</i>这是段落这是段落这是段落这是段落这是段落这是段落这是段落这是段落这是段落这是段落这是段落这是段落这是段落这是段落这是段落</p>
+			<p class="box4">这是段落这是段落这是段落<i>这是段落这是段落</i>这是段落这是段落这是段落这是段落这是段落这是段落这是段落这是段落这是段落这是段落这是段落这是段落这是段落这是段落这是段落</p>
+		</div>
+	</body>
+</html>

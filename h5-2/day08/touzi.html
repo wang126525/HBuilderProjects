@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			.big{width: 1000px;height: 500px;border: solid 1px black;margin: 0 auto;display: flex;justify-content: center;align-items: center;}
+			
+			.box{width: 100px;height: 100px;position: relative;}
+			.box>div{width: 70px;height: 70px;background: #000;border-radius: 10px;padding: 15px;box-shadow: 0px 4px 10px gray;position: absolute;left: 0;top: 0;}
+			.box span{width: 20px;height: 20px;background: #fff;border-radius: 50%;}
+			
+			.box1{display: flex;justify-content: center;align-items: center;transform: translateX(100px);}
+			
+			.box2{display: flex;flex-direction: column;align-items: center;justify-content: space-around;transform: translateX(-100px)}
+			
+			.box3{display: flex;justify-content: space-around;transform: translateY(100px)}
+			.box3 span:nth-child(2){align-self: center;}
+			.box3 span:nth-child(3){align-self: flex-end;}
+			
+			.box4{display: flex;flex-direction: column;justify-content: space-around;transform: translateY(-100px)}
+			.box4 div:nth-child(1){display: flex;justify-content: space-around;}
+			.box4 div:nth-child(2){display: flex;justify-content: space-around;}
+
+			.box5{display: flex;flex-direction: column;justify-content: space-around;transform: translateY(-200px)}
+			.box5 div:nth-child(1){display: flex;justify-content: space-between;}
+			.box5 div:nth-child(2){display: flex;justify-content: center;}
+			.box5 div:nth-child(3){display: flex;justify-content: space-between;}
+			
+			.box6{display: flex;flex-direction: column;justify-content: space-around;}
+			.box6 div:nth-child(1){display: flex;justify-content: space-around;}
+			.box6 div:nth-child(2){display: flex;justify-content: space-around;}
+			.box6 div:nth-child(3){display: flex;justify-content: space-around;}
+			
+		</style>
+	</head>
+	<body>
+		<div class="big">
+			<div class="box">
+				<div class="box1">
+					<span></span>
+				</div>
+				<div class="box2">
+					<span></span>
+					<span></span>
+				</div>
+				<div class="box3">
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
+				<div class="box4">
+					<div>
+						<span></span>
+						<span></span>
+					</div>
+					<div>
+						<span></span>
+						<span></span>
+					</div>
+				</div>
+				<div class="box5">
+					<div>
+						<span></span>
+						<span></span>
+					</div>
+					<div><span></span></div>
+					<div>
+						<span></span>
+						<span></span>
+					</div>
+				</div>
+				<div class="box6">
+					<div>
+						<span></span>
+						<span></span>
+					</div>
+					<div>
+						<span></span>
+						<span></span>
+					</div>
+					<div>
+						<span></span>
+						<span></span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

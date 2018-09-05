@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html style="height: 100%">
+   <head>
+       <meta charset="utf-8">
+       <script type="text/javascript" src="jquery-1.4.4.min.js" ></script>
+   </head>
+   <body style="height: 100%; margin: 0">
+       <div id="container" style="height: 500px;width: 1000px;margin: 0 auto;"></div>
+       
+       <script type="text/javascript" src="echarts.min2.js"></script> 
+       <!--这个js是从下面的网络连接中下载下来的，和我下载的echarts.min.js版本不一样-->
+       
+       
+       <!--<script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts/echarts.min.js"></script>-->   <!--就是这个有用！！-->
+       <!--<script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts-gl/echarts-gl.min.js"></script>--><!--这个及以下没有用-->
+       <!--<script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts-stat/ecStat.min.js"></script>-->
+       <!--<script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts/extension/dataTool.min.js"></script>-->
+       <!--<script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts/map/js/china.js"></script>-->
+       <!--<script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts/map/js/world.js"></script>-->
+       <!--<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=ZUONbpqGBsYGXNIYHicvbAbM"></script>-->
+       <!--<script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts/extension/bmap.min.js"></script>-->
+       <!--<script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/simplex.js"></script>-->
+       
+       
+       
+       
+       
+       <script type="text/javascript">
+       	
+       	
+       	
+       	
+       	
+       	
+       	
+       	
+var dom = document.getElementById("container");
+var myChart = echarts.init(dom);
+var app = {};
+//option = null;
+//myChart.showLoading();
+$(function (data) {
+    myChart.hideLoading();
+
+    echarts.util.each(data.children, function (datum, index) {
+        index % 2 === 0 && (datum.collapsed = true);
+    });
+
+    myChart.setOption(option = {
+        tooltip: {
+            trigger: 'item',
+            triggerOn: 'mousemove'
+        },
+        grid:{
+        	left:'20%'
+        },
+        series: [
+            {
+                symbol:'rect',
+                name:"tree",
+                type: 'tree',
+
+                data: [
+                    { // 注意，最外层是一个对象，代表树的根节点
+					    name: "单耗统计",    // 节点的名称，当前节点 label 对应的文本
+					    label: {          // 此节点特殊的 label 配置（如果需要的话）。
+					                   // label的格式参见 series-tree.label。
+					    },
+					    itemStyle: {      // 此节点特殊的 itemStyle 配置（如果需要的话）。
+					                 // label的格式参见 series-tree.itemStyle。
+					    },
+					    children: [  //二级节点
+					        {
+					            name: "水",
+					            value: 4116,    // value 值，只在 tooltip 中显示
+					            label: {
+					                
+					            },
+					            itemStyle: {
+					                
+					            },
+					            collapsed: null, // 如果为 true，表示此节点默认折叠。
+					            children: [   //三级节点
+					                {
+					                    name:"flex2",
+					                    value:2344
+					                },
+					                {
+					                    name:"flex3",
+					                    value:2344
+					                },
+					                {
+					                    name:"flex4",
+					                    value:2344
+					                },
+					                {
+					                    name:"flex5",
+					                    value:2344
+					                }
+                				]				 // 叶子节点没有 children, 可以不写
+        					},
+					        {
+					            name: "电",    //与二级节点平行
+					            value: 4116,    // value 值，只在 tooltip 中显示
+					            label: {},
+					            itemStyle: {},
+					            collapsed: null
+					        },
+					        {
+					            name: "气",      //与二级节点平行
+					            value: 4116,    // value 值，只在 tooltip 中显示
+					            label: {},
+					            itemStyle: {},
+					            collapsed: null
+					        }
+        
+					    ]	
+					}
+                    ],
+
+                top: '1%',
+                left: '20%',
+                bottom: '1%',
+                right: '20%',
+
+                symbolSize:[120,35],   //这个就是控制那个矩形的宽高
+                initialTreeDepthl:-1,
+                itemStyle:{            //框的样式
+                    color:'#f7f7f7',
+                    borderColor:'#cacaca'
+                },
+                label: {     
+                    normal: {         // 控制data下的name名称的样式及位置
+                        position: 'right',
+                        verticalAlign: 'middle',
+                        align: 'right',
+                        fontSize: 9,
+                        show:true,
+                        offset:[-60,0]      //这个参数控制文字 的位置[x,y],配合着position使用；
+                    }
+                    
+                },
+                leaves: {
+                    label: {
+                        normal: {
+                            position: 'right',
+                            verticalAlign: 'middle',
+                            align: 'left',
+                            show:true
+                            
+                        }
+                    }
+                },
+
+                expandAndCollapse: true,
+                animationDuration: 550,
+                animationDurationUpdate: 750
+            }
+        ]
+    });
+});
+if (option && typeof option === "object") {
+    myChart.setOption(option, true);
+}
+       </script>
+   </body>
+</html>

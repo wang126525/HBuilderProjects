@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			.box{width: 1000px;height: 500px;margin: 50px auto;border: solid 1px black;transform-style: preserve-3d;perspective: 1000px;position: relative;}
+			
+			.box .photo{width: 200px;height: 260px;position: absolute;left: 0;top: 0;right: 0;bottom: 0;margin: auto;background: red;transform-style: preserve-3d;/*transition: all 3s;*/animation: abc 8s linear infinite;}
+			
+			.box .photo img{width: 200px;height: 260px;position: absolute;top: 0;left: 0;}
+			
+			.box .photo img:nth-child(1){transform: rotateY(60deg) translateZ(300px);}
+			.box .photo img:nth-child(2){transform: rotateY(120deg) translateZ(300px);}
+			.box .photo img:nth-child(3){transform: rotateY(180deg) translateZ(300px);}
+			.box .photo img:nth-child(4){transform: rotateY(240deg) translateZ(300px);}
+			.box .photo img:nth-child(5){transform: rotateY(300deg) translateZ(300px);}
+			.box .photo img:nth-child(6){transform: rotateY(360deg) translateZ(300px);}
+			
+			/*.box:hover .photo{transform: rotateY(360deg);}*/
+			
+			@keyframes abc{
+				0%{transform: rotateY(0deg) rotateX(0deg);}
+				100%{transform: rotateY(360deg) rotateX(360deg);}
+			}
+			
+		</style>
+	</head>
+	<body>
+		<div class="box">
+			<div class="photo">
+				<img src="img/img1.jpg" alt="" />
+				<img src="img/img2.jpg" alt="" />
+				<img src="img/img3.jpg" alt="" />
+				<img src="img/img4.jpg" alt="" />
+				<img src="img/img5.jpg" alt="" />
+				<img src="img/img6.jpg" alt="" />
+			</div>
+		</div>
+	</body>
+</html>
